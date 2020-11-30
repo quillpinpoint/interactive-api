@@ -1,3 +1,5 @@
 # interactive-api
 
-See Wiki for documentation https://github.com/quillpinpoint/interactive-api/wiki
+Quill provides a number of APIs for Application Integrators. 
+
+See the Wiki for details https://github.com/quillpinpoint/interactive-api/wiki
