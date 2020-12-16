@@ -1,4 +1,4 @@
-curl --location --request POST 'https://i3.{quill-domain}/api/{tenant-uri}/Money/Bills/' \
+curl --location --request POST 'https://i3.{quill-domain}/api/{tenant-uri}/money/bills/' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer {your-token}' \
