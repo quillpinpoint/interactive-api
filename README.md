@@ -1,3 +1,5 @@
+<img src="https://auth.quill-interactive.co.uk/quill-logo.svg" alt="quill-interactive-logo" width="200"/>
+
 # interactive-api
 
 Quill provides a number of APIs for Application Integrators.
