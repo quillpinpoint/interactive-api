@@ -1,4 +1,3 @@
-#case office payment
 curl --location --request POST
 'https://i3.{quill-domain}/api/{tenant-uri}/money/office/debits/' \
 --header 'Accept: application/json' \
