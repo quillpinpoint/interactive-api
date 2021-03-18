@@ -1,0 +1,16 @@
+curl --location --request POST
+'https://i3.{quill-domain}/api/{tenant-uri}/money/client/credits' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer {your-token}' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+ "paymentMethod": "CASH",
+ "account": "SAL0041",
+ "bank": "1",
+ "amount": 120.50,
+ "date": "2017-10-16T14:09:31Z",
+ "receivedFrom": "Homar Sampson",
+ "reference": "Example reference",
+ "narrative": "client credit example",
+ "notes": "Example notes"
+}'
