@@ -16,6 +16,6 @@ curl --location --request POST
  "date": "2017-10-16T14:09:31Z",
  "receivedFrom": "Homar Sampson",
  "reference": "ref",
- "narrative": "Example office credit",
+ "narrative": "office credit example",
  "notes": "Example notes"
 }'
