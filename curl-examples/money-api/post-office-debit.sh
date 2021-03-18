@@ -30,6 +30,6 @@ curl --location --request POST
   "bicCode": null,
   "paymentReference": "pay ref"
  }
- "narrative": "Example narrative",
+ "narrative": "office debit example",
  "notes": "Example notes"
 }
