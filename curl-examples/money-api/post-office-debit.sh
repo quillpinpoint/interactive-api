@@ -1,3 +1,4 @@
+#e.g. pay a disbursement or expense
 curl --location --request POST
 'https://i3.{quill-domain}/api/{tenant-uri}/money/office/debits/' \
 --header 'Accept: application/json' \
