@@ -1,0 +1,35 @@
+curl --location --request POST 'https://i3.{quill-domain}/api/{tenant-uri}/office/debits/' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {your-token}' \
+--data-raw '{
+  "paymentMethod": "FP",
+  "account": {
+	"displayCode": null,
+	"nominalBranch": null,
+	"nominalCode": null,
+	"supplierCode": "23"
+  },
+  "bank": "1",
+  "disbCategory": 0,
+  "disbType": "COURT",
+  "amount": {
+	"vatRateId": "A",
+	"vat": null,
+	"net": null,
+	"total": 100
+  },
+  "date": "2020-07-08T14:09:31Z",
+  "reference": "ref",
+  "payee": "Homar Sampson",
+  "paymentDetails": {
+    "accountNumber": "12345678",
+	  "sortCode": "123456",
+	  "iban": null,
+	  "bicCode": null,
+    "paymentReference": "MYREF"
+  },
+  
+  "narrative": "Example supplier debit",
+  "notes": "Example notes"
+}'
