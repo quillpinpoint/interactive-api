@@ -1,3 +1,4 @@
+#e.g. pay a supplier invoice
 curl --location --request POST 'https://i3.{quill-domain}/api/{tenant-uri}/office/debits/' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
@@ -30,6 +31,6 @@ curl --location --request POST 'https://i3.{quill-domain}/api/{tenant-uri}/offic
     "paymentReference": "MYREF"
   },
   
-  "narrative": "Example supplier debit",
+  "narrative": "supplier debit example",
   "notes": "Example notes"
 }'
