@@ -4,4 +4,4 @@
 
 Quill provides a number of APIs for Application Integrators and this repo provides documentation, guidance and examples that will help you integrate your Application with Quill Interactive Cloud.
 
-See our Wiki for full details https://github.com/quillpinpoint/interactive-api/wiki
+See the Wiki for full details https://github.com/quillpinpoint/interactive-api/wiki
