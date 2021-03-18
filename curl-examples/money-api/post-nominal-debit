@@ -29,6 +29,6 @@ curl --location --request POST 'https://i3.{quill-domain}/api/{tenant-uri}/offic
 	  "bicCode": null,
     "paymentReference": "Example paymentRef"
   },
-  "narrative": "Example narrative",
+  "narrative": "nominal debit example",
   "notes": "Example notes"
 }'
