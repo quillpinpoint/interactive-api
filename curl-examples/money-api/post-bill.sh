@@ -4,7 +4,7 @@ curl --location --request POST 'https://i3.{quill-domain}/api/{tenant-uri}/money
 --header 'Authorization: Bearer {your-token}' \
 --data-raw '{
     "displayCode": "ABC0011",
-    "narrative": "Bill description",
+    "narrative": "Bill example",
     "reference": "AUTO",
     "feeItems": [
 	    {
