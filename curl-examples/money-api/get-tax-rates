@@ -1,0 +1,3 @@
+curl --location --request GET 'https://i3.{quill-domain}/api/{tenantUri}/Money/TaxRates/' \
+--header 'Accept: application/Json' \
+--header 'Authorization: Bearer {token}'
