@@ -1,0 +1,21 @@
+#post a receipt of money e.g. to pay a bill
+curl --location --request POST
+'https://i3.{quill-domain}/api/{tenant-uri}/money/office/credits' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer {your-token}' \
+--header 'Content-Type: text/plain' \
+--data-raw '{
+ "paymentMethod": "CASH",
+ "account": {
+ "displayCode": "SAL0041",
+ "nominalBranch": null,
+ "nominalCode": null
+ }
+ "bank": "1",
+ "amount": 120.50,
+ "date": "2017-10-16T14:09:31Z",
+ "receivedFrom": "Homar Sampson",
+ "reference": "ref",
+ "narrative": "Example office credit",
+ "notes": "Example notes"
+}'
