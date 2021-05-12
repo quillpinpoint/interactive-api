@@ -6,11 +6,15 @@ curl --location --request POST 'https://api.ourdomain.co.uk/quillapi5/timerecord
 --data-raw '{
   "OrqaCaseId": "2021-01-12_QGF5-MDF6-KS70",
   "Description": "Meeting with client",
-  "Created": [dateTime],
-  "IgnoreTimeLimit": True,
+  "Created": 2021-04-20T10:25:00Z,
+  "IgnoreTimeLimit": False,
   "FeeEarnerCode": 2,
   "WorkTypeCode": "ME",
   "RateSchemeCode": 1,
   "Units": 5,
   "Notes: "details notes about this activity"
 }'
+
+# the response will be the id of the time entry
+# you cannot edit the time item, but you can request deletion via a DELETE request:
+# DELETE https://api.ourdomain.co.uk/quillapi5/timerecording/{id}
