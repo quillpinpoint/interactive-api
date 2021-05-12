@@ -4,7 +4,7 @@ curl --location --request POST 'https://api.ourdomain.co.uk/quillapi5/timerecord
 --header 'Authorization: Bearer {your-token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-  "OrqaCaseId": "ABCD-1234",
+  "OrqaCaseId": "2021-01-12_QGF5-MDF6-KS70",
   "Description": "Meeting with client",
   "Created": [dateTime],
   "IgnoreTimeLimit": True,
