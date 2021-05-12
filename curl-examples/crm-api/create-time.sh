@@ -4,5 +4,13 @@ curl --location --request POST 'https://api.ourdomain.co.uk/quillapi5/timerecord
 --header 'Authorization: Bearer {your-token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-TODO
+  "OrqaCaseId": "ABCD-1234",
+  "Description": "Meeting with client",
+  "Created": [dateTime],
+  "IgnoreTimeLimit": True,
+  "FeeEarnerCode": 2,
+  "WorkTypeCode": "ME",
+  "RateSchemeCode": 1,
+  "Units": 5,
+  "Notes: "details notes about this activity"
 }'
