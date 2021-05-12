@@ -1,3 +1,10 @@
+# note this endpoint requires the newer Case identifier "OrqaCaseId"
+# as opposed to the Case.Code used in many other CRM API requests
+
+# the response will be the id of the time entry
+# you cannot edit the time item, but you can request deletion via a DELETE request:
+# DELETE https://api.ourdomain.co.uk/quillapi5/timerecording/{id}
+
 curl --location --request POST 'https://api.ourdomain.co.uk/quillapi5/timerecording \
 --header 'clientId: {your-tenant-id-here}' \
 --header 'Accept: application/Json' \
@@ -13,8 +20,5 @@ curl --location --request POST 'https://api.ourdomain.co.uk/quillapi5/timerecord
   "RateSchemeCode": 1,
   "Units": 5,
   "Notes: "details notes about this activity"
-}'
+}';
 
-# the response will be the id of the time entry
-# you cannot edit the time item, but you can request deletion via a DELETE request:
-# DELETE https://api.ourdomain.co.uk/quillapi5/timerecording/{id}
