@@ -10,52 +10,50 @@ curl --location --request GET 'https://{domain}/quillapi5/cases/VendorCode/74545
 
 
 #example json response:
+#{
+#    "DefaultRateScheme": 1,
+#    "LegalAid": {
+#        "IsLookup": true,
+#        "Code": "PRIV",
+#        "Description": "Private"
+#    },
+#    "VendorCode": "7454573",
+#    "Client": {
+#        "_contacts": null,
+#        "Cases": null,
+#        "NumberOfContacts": 0,
+#        "IsCompany": false,
+#        "IncorporationDate": null,
+#        "IncorporationCountry": null,
+#        "VatRegistered": false,
+#        "VatRegistrationNumber": null,
+#        "CertificateRegistrationNumber": null,
+#        "OrqaId": "2021-05-24_2HRD-R371-XPH1",
+#        "IsLookup": true,
+#        "Code": "BIL001",
+#        "Description": "Billham David"
+#    },
+#    "MatterCode": "000001",
+#    "Branch": {
+#        "IsLookup": true,
+#        "Code": "-1",
+#        "Description": "--"
+#    },
+#    "CaseType": {
+#        "GuidId": "some-guid",
+#        "OrqaId": "",
+#        "Notes": "",
+#        "Code": "-1",
+#        "Description": "--",
+#        "QuillObjectState": 1
+#    },
+#    "Contacts": null,
+#    "GuidId": "some-other-guid",
+#    "OrqaId": "2021-05-24_9GHZ-WKSF-B131",
+#    "Code": "BIL0011",
+#    "Description": "Purchase of 123 Blue Lane",
+#    "Owner": {
+#        "Code": "BIL001"
+#    }
+#}
 
-: <<'END_COMMENT'
-{
-    "DefaultRateScheme": 1,
-    "LegalAid": {
-        "IsLookup": true,
-        "Code": "PRIV",
-        "Description": "Private"
-    },
-    "VendorCode": "7454573",
-    "Client": {
-        "_contacts": null,
-        "Cases": null,
-        "NumberOfContacts": 0,
-        "IsCompany": false,
-        "IncorporationDate": null,
-        "IncorporationCountry": null,
-        "VatRegistered": false,
-        "VatRegistrationNumber": null,
-        "CertificateRegistrationNumber": null,
-        "OrqaId": "2021-05-24_2HRD-R371-XPH1",
-        "IsLookup": true,
-        "Code": "BIL001",
-        "Description": "Billham David"
-    },
-    "MatterCode": "000001",
-    "Branch": {
-        "IsLookup": true,
-        "Code": "-1",
-        "Description": "--"
-    },
-    "CaseType": {
-        "GuidId": "some-guid",
-        "OrqaId": "",
-        "Notes": "",
-        "Code": "-1",
-        "Description": "--",
-        "QuillObjectState": 1
-    },
-    "Contacts": null,
-    "GuidId": "some-other-guid",
-    "OrqaId": "2021-05-24_9GHZ-WKSF-B131",
-    "Code": "BIL0011",
-    "Description": "Purchase of 123 Blue Lane",
-    "Owner": {
-        "Code": "BIL001"
-    }
-}
-END_COMMENT
