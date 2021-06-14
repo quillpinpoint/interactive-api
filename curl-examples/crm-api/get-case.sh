@@ -11,7 +11,7 @@ curl --location --request GET 'https://{domain}/quillapi5/cases/VendorCode/74545
 
 #example json response:
 
-/*
+: '
 {
     "DefaultRateScheme": 1,
     "LegalAid": {
@@ -58,5 +58,4 @@ curl --location --request GET 'https://{domain}/quillapi5/cases/VendorCode/74545
         "Code": "BIL001"
     }
 }
-
-*/
+'
