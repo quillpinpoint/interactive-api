@@ -1,11 +1,15 @@
+#based on stabndard quill case code
 curl --location --request GET 'https://{domain}/quillapi5/cases/CRU0011' \
 --header 'clientId: {tenantId}' \
 --header 'Authorization: Bearer {token}'
 
+#based on "VendorCode" (which is usually populated with the integrator's own unique case id)
+curl --location --request GET 'https://{domain}/quillapi5/cases/VendorCode/7454573' \
+--header 'clientId: {tenantId}' \
+--header 'Authorization: Bearer {token}'
 
 
-/*
-example response:
+#example json response:
 
 {
     "DefaultRateScheme": 1,
