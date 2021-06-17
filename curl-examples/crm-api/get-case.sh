@@ -30,8 +30,8 @@ curl --location --request GET 'https://{domain}/quillapi5/cases/VendorCode/74545
 #        "CertificateRegistrationNumber": null,
 #        "OrqaId": "2021-05-24_2HRD-R371-XPH1",
 #        "IsLookup": true,
-#        "Code": "BIL001",
-#        "Description": "Billham David"
+#        "Code": "CRU001",
+#        "Description": "Cruz Joseph"
 #    },
 #    "MatterCode": "000001",
 #    "Branch": {
@@ -49,11 +49,11 @@ curl --location --request GET 'https://{domain}/quillapi5/cases/VendorCode/74545
 #    },
 #    "Contacts": null,
 #    "GuidId": "some-other-guid",
-#    "OrqaId": "2021-05-24_9GHZ-WKSF-B131",
+#    "OrqaId": "2021-05-24_9GHZ-WKSF-B132",
 #    "Code": "BIL0011",
 #    "Description": "Purchase of 123 Blue Lane",
 #    "Owner": {
-#        "Code": "BIL001"
+#        "Code": "CRU0011"
 #    }
 #}
 
