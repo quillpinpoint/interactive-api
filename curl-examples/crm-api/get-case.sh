@@ -1,10 +1,10 @@
 #based on the standard Quill case.code
-curl --location --request GET 'https://{our-domain}/quillapi5/cases/CRU0011' \
+curl --location --request GET 'https://{quill-domain}/quillapi5/cases/CRU0011' \
 --header 'clientId: {tenantId}' \
 --header 'Authorization: Bearer {token}'
 
 #based on case.vendorCode (which is usually populated with the integrator's own unique case id)
-curl --location --request GET 'https://{our-domain}/quillapi5/cases/VendorCode/7454573' \
+curl --location --request GET 'https://{quill-domain}/quillapi5/cases/VendorCode/7454573' \
 --header 'clientId: {tenantId}' \
 --header 'Authorization: Bearer {token}'
 
