@@ -3,9 +3,9 @@
 
 # the response will be the id of the time entry
 # you cannot edit the time item, but you can request deletion via a DELETE request:
-# DELETE https://api.ourdomain.co.uk/quillapi5/timerecording/{id}
+# DELETE https://api.{quill-domain}.co.uk/quillapi5/timerecording/{id}
 
-curl --location --request POST 'https://api.{our-domain}.co.uk/quillapi5/timerecording \
+curl --location --request POST 'https://api.{quill-domain}.co.uk/quillapi5/timerecording \
 --header 'clientId: {your-tenant-id-here}' \
 --header 'Accept: application/Json' \
 --header 'Authorization: Bearer {your-token}' \
