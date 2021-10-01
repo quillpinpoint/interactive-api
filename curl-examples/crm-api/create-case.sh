@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.{our-domain}.co.uk/quillapi5/cases' \
+curl --location --request POST 'https://api.{quill-domain}.co.uk/quillapi5/cases' \
 --header 'clientId: {your-tenant-id-here}' \
 --header 'Accept: application/Json' \
 --header 'Authorization: Bearer {your-token}' \
