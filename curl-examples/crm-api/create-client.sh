@@ -1,6 +1,6 @@
 #the recommended Client description format is: "{lastname} {firstname} {title}"
 #because Quill system generates the client code based on the first characters of that string
-curl --location --request POST 'https://api.{our-domain}/quillapi5/clients' \
+curl --location --request POST 'https://api.{quill-domain}/quillapi5/clients' \
  --header 'clientId: {your-tenant-id-here}' \
  --header 'Accept: application/Json' \
  --header 'Authorization: Bearer {your-token}' \
