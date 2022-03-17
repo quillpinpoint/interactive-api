@@ -4,6 +4,7 @@ curl --location --request POST 'https://api.{quill-domain}.co.uk/quillapi5/cases
 --header 'Authorization: Bearer {your-token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
+  "Client": { "Code": "JOE001" },
   "VendorCode": "YOUR-CASE-REF",
   "Description": "Description of this case",
   "DateOpened": "2020-05-04T00:00:00+01:00",
