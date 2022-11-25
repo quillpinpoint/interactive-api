@@ -11,14 +11,16 @@ curl --location --request POST 'https://api.{quill-domain}.co.uk/quillapi5/timer
 --header 'Authorization: Bearer {your-token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-  "OrqaCaseId": "2021-01-12_QGF5-MDF6-KS70",
+  "OrqaCaseId": "2022-11-24_EZ30-FDKW-NJW0",
+  "OrqaDocumentId": null,
+  "CaseCode": "MRP0011",
+  "UploadAtNote": false,
   "Description": "Meeting with client",
-  "Created": 2021-04-20T10:25:00Z,
-  "IgnoreTimeLimit": False,
+  "Created": "2022-11-24T10:25:00Z",
+  "IgnoreTimeLimit": false,
   "FeeEarnerCode": 2,
-  "WorkTypeCode": "ME",
+  "WorkTypeCode": "LO",
   "RateSchemeCode": 1,
   "Units": 5,
-  "Notes: "details notes about this activity"
+  "Notes": "details notes about this activity"
 }';
-
