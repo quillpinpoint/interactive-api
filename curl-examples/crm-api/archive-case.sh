@@ -4,5 +4,8 @@ curl --location --request POST 'https://api.{quill-domain}.co.uk/quillapi5/archi
 --header 'Authorization: Bearer {your-token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-TODO
+  "Code": "ABC0011",
+  "ArchiveNumber": "123456",
+  "Location": "Manchester",
+  "Boxnumber": "123456"
 }'
