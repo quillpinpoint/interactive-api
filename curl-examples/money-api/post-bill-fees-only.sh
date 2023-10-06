@@ -8,19 +8,19 @@ curl --location --request POST 'https://i3.{quill-domain}/api/{tenant-uri}/money
     "displayCode": "ABC0011",
     "narrative": "Bill description",
     "reference": "AUTO",
-    "notes": "Some notes for Cashier" #Optional field
+    "notes": "Some notes for Cashier" # Optional field
     "feeItems": [
 	    {
             "cost": 100.00,
             "vatRateId": "A",
             "vatValue": 20.00
-	    "FeeEarnerCode": 2 ## Optional Field, Cases default FE will be used otherwise
+	    "FeeEarnerCode": 2 # Optional Field, Cases default FE will be used otherwise
         },
         {
             "cost": 200.00,
             "vatRateId": "A",
             "vatValue": 40.00
-	    "FeeEarnerCode": 2 ## Optional Field, Cases default FE will be used otherwise
+	    "FeeEarnerCode": 2 # Optional Field, Cases default FE will be used otherwise
         }
     ],
     "expenseItems": [{ "description": "fake description work around"}],
