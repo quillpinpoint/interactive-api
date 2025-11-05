@@ -1,0 +1,225 @@
+curl --location 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{caseId}/ledger/time' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer 22a7359462c678385c6263eb6e87fc05'
+
+## With Params
+
+curl --location 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{caseId}/ledger/time?status=allincludepending&period=all&orderBy=posted&pageSize=100&page=1' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer 22a7359462c678385c6263eb6e87fc05'
+
+## Example Response
+
+{
+    "results": [
+        {
+            "transaction": {
+                "postedId": 6133,
+                "pendingId": 8346,
+                "reference": ""
+            },
+            "date": "2025-11-01T00:00:00Z",
+            "narrative": "Time Entry",
+            "attendanceCode": "AT",
+            "hasAttendanceNotes": true,
+            "financials": {
+                "minutes": 18,
+                "rate": 0.0,
+                "units": null,
+                "cost": 0.0,
+                "runningBalance": 0.0
+            },
+            "feeEarner": {
+                "code": 1,
+                "initials": "JP"
+            },
+            "precedentH": {
+                "description": "Unallocated"
+            },
+            "status": "Work in progress"
+        },
+        {
+            "transaction": {
+                "postedId": 6134,
+                "pendingId": 8349,
+                "reference": ""
+            },
+            "date": "2025-11-01T00:00:00Z",
+            "narrative": "Time Entry 2",
+            "attendanceCode": "AT",
+            "hasAttendanceNotes": true,
+            "financials": {
+                "minutes": 6,
+                "rate": 0.0,
+                "units": null,
+                "cost": 0.0,
+                "runningBalance": 0.0
+            },
+            "feeEarner": {
+                "code": 1,
+                "initials": "JP"
+            },
+            "precedentH": {
+                "description": "Unallocated"
+            },
+            "status": "Work in progress"
+        },
+        {
+            "transaction": {
+                "postedId": 6135,
+                "pendingId": 8350,
+                "reference": ""
+            },
+            "date": "2025-11-02T00:00:00Z",
+            "narrative": "Attendance Note",
+            "attendanceCode": "AT",
+            "hasAttendanceNotes": true,
+            "financials": {
+                "minutes": 12,
+                "rate": 0.0,
+                "units": null,
+                "cost": 0.0,
+                "runningBalance": 0.0
+            },
+            "feeEarner": {
+                "code": 1,
+                "initials": "JP"
+            },
+            "precedentH": {
+                "description": "Unallocated"
+            },
+            "status": "Work in progress"
+        },
+        {
+            "transaction": {
+                "postedId": 6136,
+                "pendingId": 8352,
+                "reference": ""
+            },
+            "date": "2025-11-02T00:00:00Z",
+            "narrative": "Email out",
+            "attendanceCode": "AT",
+            "hasAttendanceNotes": true,
+            "financials": {
+                "minutes": 6,
+                "rate": 0.0,
+                "units": null,
+                "cost": 0.0,
+                "runningBalance": 0.0
+            },
+            "feeEarner": {
+                "code": 1,
+                "initials": "JP"
+            },
+            "precedentH": {
+                "description": "Unallocated"
+            },
+            "status": "Work in progress"
+        },
+        {
+            "transaction": {
+                "postedId": 6138,
+                "pendingId": 8356,
+                "reference": ""
+            },
+            "date": "2025-11-03T00:00:00Z",
+            "narrative": "Written off example",
+            "attendanceCode": "AT",
+            "hasAttendanceNotes": true,
+            "financials": {
+                "minutes": 30,
+                "rate": 0.0,
+                "units": null,
+                "cost": 0.0,
+                "runningBalance": 0.0
+            },
+            "feeEarner": {
+                "code": 1,
+                "initials": "JP"
+            },
+            "precedentH": {
+                "description": "Unallocated"
+            },
+            "status": "Written off"
+        },
+        {
+            "transaction": {
+                "postedId": 6142,
+                "pendingId": 8362,
+                "reference": ""
+            },
+            "date": "2025-11-03T00:00:00Z",
+            "narrative": "Time Entry",
+            "attendanceCode": "AT",
+            "hasAttendanceNotes": true,
+            "financials": {
+                "minutes": 18,
+                "rate": 0.0,
+                "units": null,
+                "cost": 0.0,
+                "runningBalance": 0.0
+            },
+            "feeEarner": {
+                "code": 1,
+                "initials": "JP"
+            },
+            "precedentH": {
+                "description": "Unallocated"
+            },
+            "status": "Work in progress"
+        },
+        {
+            "transaction": {
+                "postedId": 6143,
+                "pendingId": 8363,
+                "reference": ""
+            },
+            "date": "2025-11-05T00:00:00Z",
+            "narrative": "TEST",
+            "attendanceCode": "AT",
+            "hasAttendanceNotes": true,
+            "financials": {
+                "minutes": 60,
+                "rate": 0.0,
+                "units": null,
+                "cost": 0.0,
+                "runningBalance": 0.0
+            },
+            "feeEarner": {
+                "code": 1,
+                "initials": "JP"
+            },
+            "precedentH": {
+                "description": "Unallocated"
+            },
+            "status": "Billed"
+        },
+        {
+            "transaction": {
+                "postedId": 6602,
+                "pendingId": 9082,
+                "reference": ""
+            },
+            "date": "2025-11-05T00:00:00Z",
+            "narrative": "Doc out - This is a template test",
+            "attendanceCode": "AT",
+            "hasAttendanceNotes": false,
+            "financials": {
+                "minutes": 6,
+                "rate": 48.24,
+                "units": null,
+                "cost": 4.82,
+                "runningBalance": 0.0
+            },
+            "feeEarner": {
+                "code": 1,
+                "initials": "JP"
+            },
+            "precedentH": {
+                "description": "Unallocated"
+            },
+            "status": "Billed"
+        }
+    ],
+    "_links": {}
+}
