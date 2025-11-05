@@ -6,7 +6,7 @@ curl --location 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{caseId}/led
 
 curl --location 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{caseId}/ledger/time?status=allincludepending&period=all&orderBy=posted&pageSize=100&page=1' \
 --header 'Accept: application/json' \
---header 'Authorization: Bearer 22a7359462c678385c6263eb6e87fc05'
+--header 'Authorization: Bearer {token}'
 
 ## Example Response
 
