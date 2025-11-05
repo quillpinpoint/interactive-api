@@ -3,14 +3,14 @@ curl --location -- GET 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{case
 --header 'Authorization: Bearer {token}'
 
 
-With Params 
+## With Params 
 
 curl --location -- GET 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{caseId}/ledger/office?includeEchits=true&period=all&orderBy=posted&pageSize=100&page=1
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer {token}'
 
 
-Example Response. 
+## Example Response. 
 
 {
     "results": [
