@@ -1,0 +1,159 @@
+curl --location -- GET 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{caseId}/ledger/office \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer {token}'
+
+
+## With Params 
+
+curl --location -- GET 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{caseId}/ledger/office?includeEchits=true&period=all&orderBy=posted&pageSize=100&page=1
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer {token}'
+
+
+## Example Response. 
+
+{
+    "results": [
+        {
+            "ledgerType": "office",
+            "number": 1001469,
+            "date": "2025-11-01T00:00:00Z",
+            "reference": "EXP",
+            "narrative": "Test | Expense",
+            "bankOrBranchName": "Office A/C",
+            "amount": {
+                "kind": "debit",
+                "value": 100.0
+            },
+            "transactionType": "Disb",
+            "isPaid": false,
+            "isDisbursementBilled": false,
+            "vat": 20.0,
+            "clearedDate": "2025-11-01T00:00:00Z",
+            "isReconciled": false,
+            "echitID": 2836,
+            "runningBalance": 100.0
+        },
+        {
+            "ledgerType": "office",
+            "number": 1001464,
+            "date": "2025-11-01T00:00:00Z",
+            "reference": "TEST",
+            "narrative": "Expense | Expense",
+            "bankOrBranchName": "Office A/C",
+            "amount": {
+                "kind": "debit",
+                "value": 100.0
+            },
+            "transactionType": "Disb",
+            "isPaid": false,
+            "isDisbursementBilled": true,
+            "vat": 0.0,
+            "clearedDate": "2025-11-01T00:00:00Z",
+            "isReconciled": false,
+            "echitID": 2832,
+            "runningBalance": 200.0
+        },
+        {
+            "ledgerType": "office",
+            "number": 1001465,
+            "date": "2025-11-01T00:00:00Z",
+            "reference": "TEST",
+            "narrative": "Test | Test",
+            "bankOrBranchName": "Office A/C",
+            "amount": {
+                "kind": "debit",
+                "value": 200.0
+            },
+            "transactionType": "Disb",
+            "isPaid": false,
+            "isDisbursementBilled": true,
+            "vat": 0.0,
+            "clearedDate": "2025-11-01T00:00:00Z",
+            "isReconciled": false,
+            "echitID": 2833,
+            "runningBalance": 400.0
+        },
+        {
+            "ledgerType": "office",
+            "number": 1001468,
+            "date": "2025-11-01T00:00:00Z",
+            "reference": "100741",
+            "narrative": "BILL:  £420.00 Test Of Disb & Expense",
+            "bankOrBranchName": "Stockport",
+            "amount": {
+                "kind": "debit",
+                "value": 120.0
+            },
+            "transactionType": "Bill",
+            "isPaid": false,
+            "isDisbursementBilled": false,
+            "vat": 20.0,
+            "clearedDate": "2025-11-01T00:00:00Z",
+            "isReconciled": false,
+            "echitID": 2835,
+            "runningBalance": 520.0
+        },
+        {
+            "ledgerType": "office",
+            "number": 1001470,
+            "date": "2025-11-01T00:00:00Z",
+            "reference": "TEST",
+            "narrative": "Test | Disbursements",
+            "bankOrBranchName": "Office A/C",
+            "amount": {
+                "kind": "debit",
+                "value": 100.0
+            },
+            "transactionType": "Disb",
+            "isPaid": false,
+            "isDisbursementBilled": false,
+            "vat": 20.0,
+            "clearedDate": "2025-11-01T00:00:00Z",
+            "isReconciled": false,
+            "echitID": 2837,
+            "runningBalance": 620.0
+        },
+        {
+            "ledgerType": "office",
+            "number": 2838,
+            "date": "2025-11-02T00:00:00Z",
+            "reference": "100742",
+            "narrative": "Test Bill",
+            "bankOrBranchName": "Manchester",
+            "amount": {
+                "kind": "debit",
+                "value": 280.0
+            },
+            "transactionType": "echit",
+            "isPaid": false,
+            "isDisbursementBilled": false,
+            "vat": 80.0,
+            "clearedDate": null,
+            "isReconciled": false,
+            "echitID": 2838,
+            "runningBalance": 900.0
+        },
+        {
+            "ledgerType": "office",
+            "number": 2839,
+            "date": "2025-11-02T00:00:00Z",
+            "reference": "100743",
+            "narrative": "Test",
+            "bankOrBranchName": "Manchester",
+            "amount": {
+                "kind": "debit",
+                "value": 286.0
+            },
+            "transactionType": "echit",
+            "isPaid": false,
+            "isDisbursementBilled": false,
+            "vat": 86.0,
+            "clearedDate": null,
+            "isReconciled": false,
+            "echitID": 2839,
+            "runningBalance": 1186.0
+        }
+    ],
+    "_links": {}
+}
