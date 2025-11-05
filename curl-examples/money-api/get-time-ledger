@@ -1,6 +1,6 @@
 curl --location 'https://i3.{quill-domain}.com/api/{tenantUri}/case/{caseId}/ledger/time' \
 --header 'Accept: application/json' \
---header 'Authorization: Bearer 22a7359462c678385c6263eb6e87fc05'
+--header 'Authorization: Bearer {token}'
 
 ## With Params
 
