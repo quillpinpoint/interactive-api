@@ -1,0 +1,46 @@
+curl --location 'https://{{baseUrl}}/api/{{tenantName}}/case/{{caseId}}/money' \
+--header 'Accept: application/json' \
+--header 'Authorization: {Token}'
+
+ ## Example Response 
+
+{
+    "OfficeSummary": {
+        "Actual": 16389.25,
+        "Pending": 11650.25,
+        "Total": 28039.50
+    },
+    "ClientSummary": {
+        "Actual": -12943.63,
+        "Pending": -1000.0,
+        "Total": -13943.63
+    },
+    "DepositSummary": {
+        "Actual": 0.0,
+        "Pending": 0.0,
+        "Total": 0.0
+    },
+    "BillSummary": {
+        "Actual": 13345.0,
+        "Pending": 11650.25,
+        "Total": 24995.25
+    },
+    "CreditLimit": 450.0,
+    "UnpaidBills": 15564.0,
+    "UnbilledDisbursements": 1665.25,
+    "WipBalance": 16.0,
+    "CaseDescription": "Purchase: 4 Meadow Road, Skegness",
+    "CaseTypeDescription": "Residential Purchase",
+    "DisplayCode": "TRU0011",
+    "FeeEarnerDescription": "Chaplin Charlie Mr",
+    "LegalAidDescription": "Private",
+    "CaseStatusDescription": "Live     ",
+    "OrqaId": "2014-05-06_8TYZ-1SV7-N7C0",
+    "TimeThreshold": 10,
+    "TotalTime": 12899.0,
+    "TimeCharged": 12327.0,
+    "ShowWarning": true,
+    "TimeAgainstCreditLimit": 12899.0,
+    "PendingTime": 556.0,
+    "UTFCL": true
+}
