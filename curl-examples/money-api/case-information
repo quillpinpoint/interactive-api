@@ -1,4 +1,4 @@
-curl --location 'https://{{baseUrl}}/api/{{tenantName}}/case/{{caseId}}/money' \
+curl --location 'https://i3.{{baseUrl}}/api/{{tenantName}}/case/{{caseId}}/money' \
 --header 'Accept: application/json' \
 --header 'Authorization: {Token}'
 
